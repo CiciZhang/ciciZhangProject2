@@ -106,14 +106,40 @@ header {
             margin-top: 120px;
             position: absolute;
             flex-direction: column;
-            width: 90%;
+            width: 80%;
             height: 500px;
+            padding: 40px;
          }
     }
 }
 
-.contactHeader input, 
-textarea {
+.contactHeader {
+    input,
+    textarea, 
+    input::placeholder,
+    textarea::placeholder {
     background:#0F614E;
-}
+    color: white;
+    }
+    .formFlex{
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        label {
+            position: absolute;
+            top: -1000px;
+
+        }
+    }
+}   
+
+.name, .email {
+    width: 40%;
+    padding: 15px;
+    margin: 30px 0 30px;
+    border: 0;
+    border-bottom: 2px solid #86E0F9;
+}   
+
 
