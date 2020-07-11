@@ -227,6 +227,11 @@ textarea {
 }
 
 /* FONTS */
+/* AESTHETICS */
+a {
+  display: inline-block;
+}
+
 img {
   width: 100%;
 }
