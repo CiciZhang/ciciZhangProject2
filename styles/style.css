@@ -263,7 +263,7 @@ body {
   width: 100%;
 }
 
-h1 {
+.indexHeader h1 {
   color: white;
   font-size: 7rem;
   text-align: left;
@@ -273,7 +273,17 @@ h1 {
   text-transform: uppercase;
   border: 2px solid red;
   max-width: 500px;
-  padding: 0;
+}
+
+h1 {
+  color: white;
+  font-size: 5rem;
+  text-align: left;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  border: 2px solid red;
 }
 
 header a {
@@ -384,7 +394,7 @@ header nav ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 65%;
+  width: 50%;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -394,3 +404,41 @@ header nav ul {
 }
 
 /* CONTACT HEADER */
+.contactHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactHeader .wrapper {
+  margin-top: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 65%;
+  position: relative;
+}
+
+.contactHeader .wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #0F614E;
+  height: 100%;
+  margin-top: 120px;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  height: 500px;
+}
+
+.contactHeader input,
+textarea {
+  background: #0F614E;
+}

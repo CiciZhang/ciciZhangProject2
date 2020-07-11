@@ -61,11 +61,17 @@ body {
 }
 
 
-h1 {
+.indexHeader h1 {
     @include font ($size: 7rem, $lineheight: 6rem);
     max-width: 500px;
-    padding: 0;
 }
+
+h1 {
+    @include font ($size: 5rem, $lineheight: 4rem);
+   
+}
+
+
 
 header {
     a {
