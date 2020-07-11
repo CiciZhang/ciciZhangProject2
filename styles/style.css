@@ -260,6 +260,7 @@ html {
 
 body {
   max-width: 2000px;
+  width: 100%;
 }
 
 h1 {
@@ -321,6 +322,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
+  width: 100%;
 }
 
 /* INDEX HEADER */
@@ -379,3 +381,5 @@ header nav ul {
 .blogHeader .wrapper .imgbox {
   z-index: 10;
 }
+
+/* BLOG HEADER */
