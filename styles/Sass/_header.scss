@@ -27,3 +27,25 @@ header {
     height: 600px;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav {
+    border: 2px solid blue;
+}
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper {
+    display: flex;
+    
+}
+
+.indexHeader img {
+    float: left;
+}

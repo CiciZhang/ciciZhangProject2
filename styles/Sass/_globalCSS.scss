@@ -4,6 +4,7 @@
 
 $barlow: 'Barlow', sans-serif;
 $lato: 'Lato', sans-serif;
+$maxWidth: 2000px;
 
 ///////////
 /* FONTS */ 
@@ -13,6 +14,9 @@ html {
     font-size: 125%;
     font-family: $lato;
     color: white;
+    background-color: #0C1423;
+    display: flex;
+    justify-content: center;
 }
 
 @mixin font ($color: white, 
@@ -37,16 +41,6 @@ h1 {
 header a {
     @include font ($lineheight: 1.5rem, $spacing: 1px, $alignment: center)
 }
-
-// h1,
-// h2,
-// h3,
-// h4,
-// header a {
-//     text-transform: uppercase;
-//     color: white;
-//     font-family: $barlow;
-// }
 
 ////////////////
 /* AESTHETICS */
