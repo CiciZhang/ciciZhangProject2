@@ -4,20 +4,28 @@
 
 $barlow: 'Barlow', sans-serif;
 $lato: 'Lato', sans-serif;
-$maxWidth: 2000px;
 
-///////////
-/* FONTS */ 
-///////////
 
-html {
-    font-size: 125%;
-    font-family: $lato;
-    color: white;
-    background-color: #0C1423;
-    display: flex;
-    justify-content: center;
+////////////////
+/* AESTHETICS */
+////////////////
+
+a {
+    display: inline-block;
+    text-decoration: none;
 }
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+}
+
+////////////
+/* MIXINS */
+////////////
 
 @mixin font ($color: white, 
             $size: 1rem, 
@@ -34,23 +42,32 @@ html {
     border: 2px solid red;
 }
 
+///////////
+/* FONTS */ 
+///////////
+
+html {
+    font-size: 125%;
+    font-family: $lato;
+    color: white;
+    background-color: #0C1423;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    max-width: 2000px;
+}
+
+
 h1 {
     @include font ($size: 7rem, $lineheight: 6rem);
+    max-width: 500px;
 }
 
-header a {
-    @include font ($lineheight: 1.5rem, $spacing: 1px, $alignment: center)
-}
-
-////////////////
-/* AESTHETICS */
-////////////////
-
-a {
-    display: inline-block;
-    text-decoration: none;
-}
-
-img {
-    width: 100%;
+header {
+    a {
+    @include font ($lineheight: 1.5rem, $spacing: 1px, $alignment: center);
+    padding: 20px;
+    }
 }

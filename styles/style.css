@@ -227,6 +227,23 @@ textarea {
 }
 
 /* VARIABLES */
+/* AESTHETICS */
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* MIXINS */
 /* FONTS */
 html {
   font-size: 125%;
@@ -241,6 +258,10 @@ html {
           justify-content: center;
 }
 
+body {
+  max-width: 2000px;
+}
+
 h1 {
   color: white;
   font-size: 7rem;
@@ -250,6 +271,7 @@ h1 {
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
   border: 2px solid red;
+  max-width: 500px;
 }
 
 header a {
@@ -261,20 +283,23 @@ header a {
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
   border: 2px solid red;
-}
-
-/* AESTHETICS */
-a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-img {
-  width: 100%;
+  padding: 20px;
 }
 
 header {
   border: 2px solid red;
+}
+
+nav {
+  border: 2px solid blue;
+}
+
+img {
+  border: 2px solid pink;
+}
+
+.wrapper {
+  border: 2px solid white;
 }
 
 /* HEADER BACKGROUNDS */
@@ -295,9 +320,10 @@ header {
 .blogHeader {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 700px;
 }
 
+/* INDEX HEADER */
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,11 +334,11 @@ header {
           flex-direction: column;
 }
 
-nav {
-  border: 2px solid blue;
+header nav {
+  margin-bottom: 10vh;
 }
 
-ul {
+header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,12 +347,35 @@ ul {
           justify-content: flex-end;
 }
 
-.wrapper {
+.indexHeader h1 {
+  margin-left: 50px;
+}
+
+.indexHeader .imgbox {
+  float: left;
+  z-index: 10;
+}
+
+/* BLOG HEADER */
+.blogHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.indexHeader img {
-  float: left;
+.blogHeader .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 65%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.blogHeader .wrapper .imgbox {
+  z-index: 10;
 }

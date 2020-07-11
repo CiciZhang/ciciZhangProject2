@@ -1,7 +1,16 @@
 header {
     border: 2px solid red;
 }
+nav {
+    border: 2px solid blue;
+}
 
+img {
+    border: 2px solid pink;
+}
+.wrapper {
+    border: 2px solid white;
+}
 
 ////////////////////////
 /* HEADER BACKGROUNDS */ 
@@ -24,28 +33,49 @@ header {
 .blogHeader {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 700px;
 }
+
+//////////////////
+/* INDEX HEADER */
+//////////////////
 
 header {
     display: flex;
     flex-direction: column;
-
-}
-
-nav {
-    border: 2px solid blue;
-}
-ul {
-    display: flex;
+    nav {
+        margin-bottom: 10vh;
+        ul {
+        display: flex;
     justify-content: flex-end;
-}
-
-.wrapper {
-    display: flex;
+    }
+    }
     
 }
 
-.indexHeader img {
+.indexHeader {
+    h1 { margin-left: 50px;
+        }
+    .imgbox {
     float: left;
+    z-index: 10;
+    }
+}
+
+
+//////////////////
+/* BLOG HEADER */
+//////////////////
+
+.blogHeader {
+    display: flex;
+    .wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 65%;
+        align-self: flex-end;
+        .imgbox {
+        z-index: 10;
+        }
+    }
 }
