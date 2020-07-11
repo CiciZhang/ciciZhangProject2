@@ -1,0 +1,29 @@
+header {
+    border: 2px solid red;
+}
+
+
+////////////////////////
+/* HEADER BACKGROUNDS */ 
+////////////////////////
+
+.indexHeader {
+    background: url(../assets/header-image.jpg);
+}
+
+.blogHeader {
+    background: url(../assets/blog-header.jpg);
+}
+
+.contactHeader {
+    background: url(../assets/contact-header.jpg);
+}
+
+.indexHeader, 
+.contactHeader,
+.blogHeader {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
