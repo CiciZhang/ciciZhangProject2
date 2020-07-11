@@ -1,7 +1,52 @@
+///////////////
+/* VARIABLES */
+///////////////
+
+$barlow: 'Barlow', sans-serif;
+$lato: 'Lato', sans-serif;
+
 ///////////
 /* FONTS */ 
 ///////////
 
+html {
+    font-size: 125%;
+    font-family: $lato;
+    color: white;
+}
+
+@mixin font ($color: white, 
+            $size: 1rem, 
+            $alignment: left, 
+            $lineheight: normal, 
+            $spacing: normal){
+    color: $color;
+    font-size: $size;
+    text-align: $alignment;
+    line-height: normal;
+    letter-spacing: normal;
+    font-family: $barlow;
+    text-transform: uppercase;
+    border: 2px solid red;
+}
+
+h1 {
+    @include font ($size: 7rem, $lineheight: 6rem);
+}
+
+header a {
+    @include font ($lineheight: 1.5rem, $spacing: 1px, $alignment: center)
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// header a {
+//     text-transform: uppercase;
+//     color: white;
+//     font-family: $barlow;
+// }
 
 ////////////////
 /* AESTHETICS */
@@ -9,6 +54,7 @@
 
 a {
     display: inline-block;
+    text-decoration: none;
 }
 
 img {
