@@ -106,7 +106,6 @@ header a:hover {
     position: absolute;
     top: 130px;
     left: -50px;
-    display: none;
 }
 
 // this is the vertical blue bar 
@@ -114,10 +113,10 @@ header a:hover {
 .blogHeader .wrapper::after{
     content: "";
     width: 5px;
-    height: 900px;
+    height: 120%;
     background:$robinblue;
     position: absolute;
-    top: 600px;
+    top: 100%;
     left: -50px;
 }
 
@@ -129,11 +128,10 @@ header a:hover {
     height: 5px;
     background:$robinblue;
     position: absolute;
-    bottom: -800px;
+    top: 220%;
+    // bottom: -800px;
     left: -50px;
 }
-
-
 
 /////////////////////
 /* CONTACT HEADER */

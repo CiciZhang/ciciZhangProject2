@@ -18,14 +18,40 @@ aside {
 article {
     width: 50%;
     padding: 150px 0 0;
-    background: pink;
+    // background: pink;
     .longText{
-        border-bottom: 5px solid $robinblue;
-        background: tomato;
+        width: 90%;
         .date {
         margin: 20px 0 40px;
+        }
     }
-    }
-    
 }
 
+/////////////////////
+/* COMMENT SECTION */
+/////////////////////
+
+.commentSection {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    .commentBox {
+        justify-content: space-between;
+        margin-bottom: 50px;
+        position: relative;
+        display: flex;
+        .imageBox {
+        width: 15%;
+        }
+        .textBox {
+            .date {
+            margin-bottom: 20px;
+            }
+            max-width: 70%;
+        }
+    }
+}
+
+.commentSection h3 {
+        margin: 50px 0 20px;
+    }

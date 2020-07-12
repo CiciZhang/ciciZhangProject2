@@ -301,6 +301,17 @@ h2 {
   border: 2px solid red;
 }
 
+h3 {
+  color: white;
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  border: 2px solid red;
+}
+
 header a {
   color: white;
   font-size: 1rem;
@@ -432,16 +443,15 @@ header a:hover {
   position: absolute;
   top: 130px;
   left: -50px;
-  display: none;
 }
 
 .blogHeader .wrapper::after {
   content: "";
   width: 5px;
-  height: 900px;
+  height: 120%;
   background: #86E0F9;
   position: absolute;
-  top: 600px;
+  top: 100%;
   left: -50px;
 }
 
@@ -451,7 +461,7 @@ header a:hover {
   height: 5px;
   background: #86E0F9;
   position: absolute;
-  bottom: -800px;
+  top: 220%;
   left: -50px;
 }
 
@@ -609,16 +619,53 @@ aside .asideText {
 article {
   width: 50%;
   padding: 150px 0 0;
-  background: pink;
 }
 
 article .longText {
-  border-bottom: 5px solid #86E0F9;
-  background: tomato;
+  width: 90%;
 }
 
 article .longText .date {
   margin: 20px 0 40px;
+}
+
+/* COMMENT SECTION */
+.commentSection {
+  margin-top: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.commentSection .commentBox {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.commentSection .commentBox .imageBox {
+  width: 15%;
+}
+
+.commentSection .commentBox .textBox {
+  max-width: 70%;
+}
+
+.commentSection .commentBox .textBox .date {
+  margin-bottom: 20px;
+}
+
+.commentSection h3 {
+  margin: 50px 0 20px;
 }
 
 .contactFooter {
