@@ -4,6 +4,9 @@
 
 $barlow: 'Barlow', sans-serif;
 $lato: 'Lato', sans-serif;
+$blackblue: #0C1423;
+$treegreen: #0F614E;
+$robinblue: #86E0F9;
 
 
 ////////////////
@@ -23,6 +26,9 @@ img {
     display: flex;
 }
 
+i {
+    color: white;
+}
 ////////////
 /* MIXINS */
 ////////////
@@ -56,7 +62,7 @@ html {
 }
 
 body {
-    max-width: 2000px;
+    max-width: 4000px;
     width: 100%;
 }
 
