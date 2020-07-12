@@ -68,6 +68,7 @@ article {
     width: 80%;
     height: 500px;
     padding: 40px;
+    border: 2px solid red;
 }
 
 .commentSection{
@@ -88,12 +89,13 @@ article {
     }
 }
 
-.commentSection input {
+.commentSection .email,
+.commentSection .name {
     background: $blackblue;
 }
 
 .blogSubmitButton {
     @include font($lineheight: 1.5rem, $spacing: 1px, $alignment: center);
     padding: 10px 0;
-    background-color:$treeGreen;
+    background:$treegreen;
 }

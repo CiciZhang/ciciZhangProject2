@@ -683,7 +683,65 @@ article .longText .date {
   width: 80%;
   height: 500px;
   padding: 40px;
-  border: 2px solid pink;
+  border: 2px solid red;
+}
+
+.commentSection textarea,
+.commentSection input::-webkit-input-placeholder,
+.commentSection textarea::-webkit-input-placeholder {
+  background: #0C1423;
+}
+
+.commentSection textarea,
+.commentSection input:-ms-input-placeholder,
+.commentSection textarea:-ms-input-placeholder {
+  background: #0C1423;
+}
+
+.commentSection textarea,
+.commentSection input::-ms-input-placeholder,
+.commentSection textarea::-ms-input-placeholder {
+  background: #0C1423;
+}
+
+.commentSection textarea,
+.commentSection input::placeholder,
+.commentSection textarea::placeholder {
+  background: #0C1423;
+}
+
+.commentSection .formFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.commentSection .formFlex label {
+  position: absolute;
+  top: -1000px;
+}
+
+.commentSection .email,
+.commentSection .name {
+  background: #0C1423;
+}
+
+.blogSubmitButton {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  border: 2px solid red;
+  padding: 10px 0;
+  background: #0F614E;
 }
 
 .contactFooter {
