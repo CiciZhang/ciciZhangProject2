@@ -92,13 +92,15 @@
                </div>
                
                 <form action="someServer">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Name">
-                    <label for="email">Email address</label>
-                    <input type="email" id="email" placeholder="Email address">
+                    <div class="formFlex">
+                        <label for="name">Name</label>
+                        <input type="text" class="name" id="name" placeholder="Name">
+                        <label for="email">Email address</label>
+                        <input class="email" type="email" id="email" placeholder="Email address">
+                    </div>
                     <label for="comment"></label>
-                    <textarea name="comment" id="comment" placeholder="Comment" cols="30" rows="10"></textarea>
-                    <input type="submit" value="post comment">
+                    <textarea class="messageComment" name="comment" id="comment" placeholder="Comment" cols="30" rows="10"></textarea>
+                    <input class="blogSubmitButton" type="submit" value="post comment">
                 </form>
             </section>
         </article>

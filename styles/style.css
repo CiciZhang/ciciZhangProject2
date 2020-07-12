@@ -668,6 +668,24 @@ article .longText .date {
   margin: 50px 0 20px;
 }
 
+/* FORM AT THE BOTTOM */
+.commentSection form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin-top: 50px;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  height: 500px;
+  padding: 40px;
+  border: 2px solid pink;
+}
+
 .contactFooter {
   background: #0C1423;
   height: 50vh;

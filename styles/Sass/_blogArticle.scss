@@ -55,3 +55,45 @@ article {
 .commentSection h3 {
         margin: 50px 0 20px;
     }
+/////////////////////////
+/* FORM AT THE BOTTOM */
+////////////////////////
+
+.commentSection form {
+    display: flex;
+    height: 100%;
+    margin-top: 50px;
+    position: relative;
+    flex-direction: column;
+    width: 80%;
+    height: 500px;
+    padding: 40px;
+}
+
+.commentSection{
+    textarea, 
+    input::placeholder,
+    textarea::placeholder {
+    background:$blackblue;
+    }
+    .formFlex{
+        display: flex;
+        overflow: hidden;
+        justify-content: space-between;
+        position: relative;
+        label {
+            position: absolute;
+            top: -1000px;
+        }
+    }
+}
+
+.commentSection input {
+    background: $blackblue;
+}
+
+.blogSubmitButton {
+    @include font($lineheight: 1.5rem, $spacing: 1px, $alignment: center);
+    padding: 10px 0;
+    background-color:$treeGreen;
+}
