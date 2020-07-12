@@ -107,14 +107,13 @@ header {
             position: absolute;
             flex-direction: column;
             width: 80%;
-            height: 500px;
+            height: 400px;
             padding: 40px;
          }
     }
 }
 
 .contactHeader {
-    input,
     textarea, 
     input::placeholder,
     textarea::placeholder {
@@ -122,6 +121,9 @@ header {
     color: white;
     }
     .formFlex{
+        input {
+            background:#0F614E;
+        }
         overflow: hidden;
         display: flex;
         justify-content: space-between;
@@ -141,5 +143,18 @@ header {
     border: 0;
     border-bottom: 2px solid #86E0F9;
 }   
+
+.messageComment {
+    border: 2px solid #86E0F9;
+    padding: 15px;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+.contactSubmitButton {
+    @include font($lineheight: 1.5rem, $spacing: 1px, $alignment: center);
+    padding: 10px 0;
+    background-color: #0C1423;
+}
 
 
