@@ -1,5 +1,8 @@
+/////////////
+/* LAYER 1 */
+/////////////
+
 .moreInfo {
-    background: hotpink;
     display: flex;
     flex-direction: column;
     .layer1 {
@@ -12,7 +15,39 @@
         align-content: center;
         .layer1Box {
             width: 40%;
-            background: red;
+            display: flex;
+            position: relative;
+            padding-left: 70px;
         }
     }
 }
+
+.moreInfo i {
+    background: $robinblue;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+.layer1Box .textBox {
+    margin: 20px;
+    p {
+        margin-top: 20px;
+    }
+}
+
+/////////////
+/* LAYER 2 */
+/////////////
+
+.layer2 {
+    height: 600px;
+    background-image: url(../assets/banner.jpg);
+    background-size: cover;
+}
+
+/////////////
+/* LAYER 3 */
+/////////////

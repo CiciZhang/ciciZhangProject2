@@ -732,8 +732,8 @@ header a:hover {
   right: 0;
 }
 
+/* LAYER 1 */
 .moreInfo {
-  background: hotpink;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -764,9 +764,38 @@ header a:hover {
 
 .moreInfo .layer1 .layer1Box {
   width: 40%;
-  background: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-left: 70px;
 }
 
+.moreInfo i {
+  background: #86E0F9;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.layer1Box .textBox {
+  margin: 20px;
+}
+
+.layer1Box .textBox p {
+  margin-top: 20px;
+}
+
+/* LAYER 2 */
+.layer2 {
+  height: 600px;
+  background-image: url(../assets/banner.jpg);
+  background-size: cover;
+}
+
+/* LAYER 3 */
 .asideArticleBox {
   display: -webkit-box;
   display: -ms-flexbox;
