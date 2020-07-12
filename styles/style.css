@@ -634,6 +634,104 @@ header a:hover {
   padding: 10px 20px;
 }
 
+/* SECOND MAIN */
+.fourSquares {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #0F614E;
+  height: 800px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fourSquares .imageBox {
+  position: absolute;
+  width: 40%;
+}
+
+.fourSquares .textBox {
+  width: 40%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fourSquares h3 {
+  margin: 30px 0;
+}
+
+.fourSquares p {
+  margin-bottom: 30px;
+}
+
+.fourSquares a {
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  border: 2px solid red;
+  padding: 10px;
+  background: #0C1423;
+  width: 150px;
+  text-align: center;
+}
+
+.topBox {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.bottomBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottomBox h3, .bottomBox p {
+  text-align: right;
+}
+
+.bottomBox a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.topImage {
+  top: -100px;
+  left: 0;
+}
+
+.bottomImage {
+  bottom: -100px;
+  right: 0;
+}
+
 .asideArticleBox {
   display: -webkit-box;
   display: -ms-flexbox;
