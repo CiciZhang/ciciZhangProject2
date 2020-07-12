@@ -16,6 +16,16 @@ aside {
 }
 
 article {
-    background: pink;
     width: 50%;
+    padding: 150px 0 0;
+    background: pink;
+    .longText{
+        border-bottom: 5px solid $robinblue;
+        background: tomato;
+        .date {
+        margin: 20px 0 40px;
+    }
+    }
+    
 }
+
