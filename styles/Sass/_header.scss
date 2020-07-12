@@ -38,9 +38,9 @@ img {
     display: flex;
 }
 
-//////////////////
-/* INDEX HEADER */
-//////////////////
+////////////////////
+/* COMMON HEADER */
+////////////////////
 
 header {
     flex-direction: column;
@@ -52,6 +52,14 @@ header {
         }
     }
 }
+
+header a:hover {
+    color: $robinblue;
+}
+
+//////////////////
+/* INDEX HEADER */
+//////////////////
 
 .indexHeader {
     h1 { margin-left: 50px;
@@ -81,10 +89,23 @@ header {
         align-items: flex-start;
         width: 50%;
         align-self: flex-end;
+        position: relative;
         .imgbox {
         z-index: 10;
+       
         }
     }
+}
+
+
+.blogHeader .wrapper::before{
+    content: "";
+    width: 95%;
+    height: 700px;
+    background:$robinblue;
+    position: absolute;
+    top: 130px;
+    left: -50px;
 }
 
 /////////////////////

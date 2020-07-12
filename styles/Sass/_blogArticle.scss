@@ -1,0 +1,21 @@
+.asideArticleBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    width: 300px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .asideText{
+        background: red;
+        width: 75%;
+    }
+}
+
+article {
+    background: pink;
+    width: 50%;
+}
