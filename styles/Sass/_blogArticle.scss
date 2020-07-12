@@ -3,17 +3,46 @@
     justify-content: space-between;
 }
 
+////////////
+/* ASIDE */
+///////////
+
 aside {
-    width: 300px;
-    border: 2px solid red;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    position: relative; 
+    border: 2px solid red;
+    .imageBox {
+        width: 90%;
+    }
     .asideText{
-        background: red;
+        background: $treegreen;
         width: 75%;
+        padding: 90% 20px 20px;
+        position: absolute;
+        left: 20%;
+        z-index: -10;
+        h4 {
+            margin: 10px 0;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
     }
 }
+
+// .asideText::after {
+//     content: "";
+//     width: 30px;
+//     height: 20%;
+//     background: $treegreen;
+//     position: absolute;
+//     top: 0;
+//     right: -20px;
+// }
 
 article {
     width: 50%;

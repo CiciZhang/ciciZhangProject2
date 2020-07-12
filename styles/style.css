@@ -312,6 +312,17 @@ h3 {
   border: 2px solid red;
 }
 
+h4 {
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  border: 2px solid red;
+}
+
 header a {
   color: white;
   font-size: 1rem;
@@ -587,6 +598,42 @@ header a:hover {
   background-color: #0C1423;
 }
 
+/* FIRST MAIN */
+.underFish {
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.underFish p {
+  width: 60%;
+  margin: 30px 0;
+}
+
+.underFish a {
+  color: #0C1423;
+  font-size: 1rem;
+  text-align: left;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  border: 2px solid red;
+  background: #86E0F9;
+  padding: 10px 20px;
+}
+
 .asideArticleBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -596,9 +643,9 @@ header a:hover {
           justify-content: space-between;
 }
 
+/* ASIDE */
 aside {
-  width: 300px;
-  border: 2px solid red;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,11 +656,30 @@ aside {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
+  border: 2px solid red;
+}
+
+aside .imageBox {
+  width: 90%;
 }
 
 aside .asideText {
-  background: red;
+  background: #0F614E;
   width: 75%;
+  padding: 90% 20px 20px;
+  position: absolute;
+  left: 20%;
+  z-index: -10;
+}
+
+aside .asideText h4 {
+  margin: 10px 0;
+}
+
+aside .asideText ul {
+  list-style-type: disc;
+  margin-left: 20px;
 }
 
 article {

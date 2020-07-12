@@ -85,6 +85,10 @@ h3 {
     @include font($size: 1.5rem, $spacing: 1px)
 }
 
+h4 {
+    @include font($size: 1rem)
+}
+
 header {
     a {
     @include font ($lineheight: 1.5rem, $spacing: 1px, $alignment: center);
