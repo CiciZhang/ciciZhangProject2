@@ -796,6 +796,44 @@ header a:hover {
 }
 
 /* LAYER 3 */
+.layer3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.layer3 .imageBox {
+  max-width: 30%;
+}
+
+.layer3 .textBox {
+  width: 60%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.layer3 .textBox p {
+  padding: 20px 0;
+}
+
+.layer3 .textBox a {
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  border: 2px solid red;
+  background: #86E0F9;
+  padding: 10px 20px;
+}
+
 .asideArticleBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -972,6 +1010,7 @@ article .longText .date {
   background: #0F614E;
 }
 
+/* CONTACT FOOTER */
 .contactFooter {
   background: #0C1423;
   height: 50vh;
@@ -1003,4 +1042,37 @@ article .longText .date {
   text-transform: uppercase;
   border: 2px solid red;
   margin: 20px 0;
+}
+
+/* INDEX FOOTER */
+.threeImageRow {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #0F614E;
+}
+
+.threeImageRow .bigImageBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.threeImageRow .bigImageBox .imageBox {
+  margin: 80px 10px;
+}
+
+.threeImageRow p {
+  background: #86E0F9;
+  color: black;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }

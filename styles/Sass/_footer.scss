@@ -1,3 +1,7 @@
+////////////////////
+/* CONTACT FOOTER */
+////////////////////
+
 .contactFooter {
     background: $blackblue;
     height: 50vh;
@@ -17,4 +21,27 @@
 .infoemail{
     @include font($size: 1.3rem);
     margin: 20px 0;
+}
+
+//////////////////
+/* INDEX FOOTER */
+//////////////////
+
+.threeImageRow {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background: $treegreen;
+    .bigImageBox {
+        display: flex;
+        justify-content: center;
+        .imageBox {
+            margin: 80px 10px;
+        }
+    }
+    p {
+        background:$robinblue;
+        color: black;
+        align-self: flex-end;
+    }
 }
