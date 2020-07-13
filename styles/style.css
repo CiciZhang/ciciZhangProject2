@@ -275,7 +275,6 @@ body {
   letter-spacing: normal;
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
-  border: 2px solid red;
   max-width: 500px;
 }
 
@@ -287,7 +286,6 @@ h1 {
   letter-spacing: normal;
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
-  border: 2px solid red;
 }
 
 h2 {
@@ -298,7 +296,6 @@ h2 {
   letter-spacing: normal;
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
-  border: 2px solid red;
 }
 
 h3 {
@@ -309,7 +306,6 @@ h3 {
   letter-spacing: normal;
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
-  border: 2px solid red;
 }
 
 h4 {
@@ -320,7 +316,6 @@ h4 {
   letter-spacing: normal;
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
-  border: 2px solid red;
 }
 
 header a {
@@ -331,24 +326,7 @@ header a {
   letter-spacing: normal;
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
-  border: 2px solid red;
   padding: 20px;
-}
-
-header {
-  border: 2px solid red;
-}
-
-nav {
-  border: 2px solid blue;
-}
-
-img {
-  border: 2px solid pink;
-}
-
-.wrapper {
-  border: 2px solid white;
 }
 
 /* HEADER BACKGROUNDS */
@@ -593,7 +571,6 @@ header a:hover {
   letter-spacing: normal;
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
-  border: 2px solid red;
   padding: 10px 0;
   background-color: #0C1423;
 }
@@ -629,7 +606,6 @@ header a:hover {
   letter-spacing: normal;
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
-  border: 2px solid red;
   background: #86E0F9;
   padding: 10px 20px;
 }
@@ -689,7 +665,6 @@ header a:hover {
   letter-spacing: normal;
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
-  border: 2px solid red;
   padding: 10px;
   background: #0C1423;
   width: 150px;
@@ -829,7 +804,6 @@ header a:hover {
   letter-spacing: normal;
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
-  border: 2px solid red;
   background: #86E0F9;
   padding: 10px 20px;
 }
@@ -857,7 +831,6 @@ aside {
       -ms-flex-align: end;
           align-items: flex-end;
   position: relative;
-  border: 2px solid red;
 }
 
 aside .imageBox {
@@ -949,7 +922,6 @@ article .longText .date {
   width: 80%;
   height: 500px;
   padding: 40px;
-  border: 2px solid red;
 }
 
 .commentSection textarea,
@@ -1005,7 +977,6 @@ article .longText .date {
   letter-spacing: normal;
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
-  border: 2px solid red;
   padding: 10px 0;
   background: #0F614E;
 }
@@ -1040,7 +1011,6 @@ article .longText .date {
   letter-spacing: normal;
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
-  border: 2px solid red;
   margin: 20px 0;
 }
 
