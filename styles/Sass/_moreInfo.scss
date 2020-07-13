@@ -56,12 +56,24 @@
     display: flex;
     padding: 100px;
     justify-content: space-between;
+    position: relative;
     .imageBox {
         max-width: 30%;
+        z-index: 2;
     }
     .textBox {
         width: 60%;
         align-self: center;
+        &:before {
+            content: "";
+            width: 300px;
+            height: 300px;
+            background: $robinblue;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            z-index: -2;
+        }
         p {
             padding: 20px 0;
         }

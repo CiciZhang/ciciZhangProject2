@@ -802,10 +802,12 @@ header a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .layer3 .imageBox {
   max-width: 30%;
+  z-index: 2;
 }
 
 .layer3 .textBox {
@@ -813,6 +815,17 @@ header a:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.layer3 .textBox:before {
+  content: "";
+  width: 300px;
+  height: 300px;
+  background: #86E0F9;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  z-index: -2;
 }
 
 .layer3 .textBox p {
