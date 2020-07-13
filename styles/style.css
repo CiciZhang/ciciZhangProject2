@@ -264,6 +264,7 @@ html {
 
 body {
   max-width: 4000px;
+  min-width: 320px;
   width: 100%;
 }
 
@@ -731,45 +732,25 @@ header a:hover {
 }
 
 /* LAYER 1 */
-.moreInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.layer1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
-.moreInfo .layer1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: relative;
-  height: 800px;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  -ms-flex-line-pack: center;
-      align-content: center;
+.layer1 .locations,
+.layer1 .communities {
+  margin: 200px 80px 20px;
 }
 
-.moreInfo .layer1 .layer1Box {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
-  width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.layer1 .blog,
+.layer1 .getInTouch {
+  margin: 20px 80px 200px;
+}
+
+.layer1 .layer1Box {
   position: relative;
-  padding-left: 70px;
 }
 
 .moreInfo i {
@@ -777,7 +758,7 @@ header a:hover {
   padding: 20px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -50px;
   border-radius: 50%;
 }
 
@@ -1097,7 +1078,7 @@ article .longText .date {
     height: 400px;
   }
   .fourSquares {
-    height: 600px;
+    height: 700px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1120,6 +1101,13 @@ article .longText .date {
   .fourSquares .textBox p {
     width: 70%;
   }
+  .layer1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .layer1 i {
+    left: 25px;
+  }
   .layer3 .textBox:before {
     display: none;
   }
@@ -1127,7 +1115,3 @@ article .longText .date {
     height: 400px;
   }
 }
-
-/* LAYER 1 */
-/* LAYER 2 */
-/* LAYER 3 */

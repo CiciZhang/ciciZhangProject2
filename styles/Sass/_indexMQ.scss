@@ -11,7 +11,7 @@
     }
 
     .fourSquares {
-        height: 600px;
+        height: 700px;
         justify-content: center;
         .imageBox {
             display: none;
@@ -28,7 +28,13 @@
             }
         }
     }
-
+    .layer1 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        i {
+            left: 25px;
+        }
+    }
     .layer3 {
         .textBox {
             &:before {
@@ -40,41 +46,3 @@
         height: 400px;
     }
 }
-/////////////////
-// more info //
-///////////////
-
-/////////////
-/* LAYER 1 */
-/////////////
-
-// .moreInfo {
-//     display: flex;
-//     flex-direction: column;
-//     .layer1 {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-content: center;
-//         padding: 20px;
-//         .layer1Box {
-//             // max-width: 40%;
-//             // display: flex;
-//             // position: relative;
-//             // padding-left: 70px;
-//         }
-//     }
-// }
-
-
-/////////////
-/* LAYER 2 */
-/////////////
-
-
-/////////////
-/* LAYER 3 */
-/////////////
-
-
-
