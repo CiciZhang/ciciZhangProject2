@@ -1147,4 +1147,10 @@ article .longText .date {
     font-size: 5rem;
     max-width: 400px;
   }
+  h2 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.5rem;
+  }
 }
