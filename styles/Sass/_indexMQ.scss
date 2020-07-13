@@ -1,5 +1,45 @@
 @media (max-width:1000px) {
-    .indexHeader .imgbox {
-        display: none;
+    .indexHeader .imgbox,
+    .topBox::before,
+    .bottomBox::before,
+    .layer1Box {
+    display: none;
     }
+   
+.underFish {
+    height: 400px;
+}
+
+.fourSquares {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background:$treegreen;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    .imageBox {
+       display: none;
+    }
+    .textBox {
+        align-items: center;
+        width: 100%;
+        display: flex;
+        position: static;
+        flex-direction: column;
+        justify-content: center;
+        a {
+            align-self: center;
+            margin-bottom: 30px;
+        }
+        p {
+            width: 70%;
+        }
+    
+    }
+}
+
+
+
+
 }
