@@ -6,40 +6,75 @@
     display: none;
     }
    
-.underFish {
-    height: 400px;
-}
-
-.fourSquares {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    background:$treegreen;
-    height: 600px;
-    justify-content: center;
-    align-items: center;
-    .imageBox {
-       display: none;
+    .underFish {
+        height: 400px;
     }
-    .textBox {
-        align-items: center;
-        width: 100%;
-        display: flex;
-        position: static;
-        flex-direction: column;
+
+    .fourSquares {
+        height: 600px;
         justify-content: center;
-        a {
-            align-self: center;
-            margin-bottom: 30px;
+        .imageBox {
+            display: none;
         }
-        p {
-            width: 70%;
+        .textBox {
+            align-items: center;
+            width: 100%;
+            a {
+                align-self: center;
+                margin-bottom: 30px;
+            }
+            p {
+                width: 70%;
+            }
         }
-    
+    }
+
+    .layer3 {
+        .textBox {
+            &:before {
+                display: none;
+                }
+            }
+        }
+    .threeImageRow {
+        height: 400px;
     }
 }
+/////////////////
+// more info //
+///////////////
+
+/////////////
+/* LAYER 1 */
+/////////////
+
+// .moreInfo {
+//     display: flex;
+//     flex-direction: column;
+//     .layer1 {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-content: center;
+//         padding: 20px;
+//         .layer1Box {
+//             // max-width: 40%;
+//             // display: flex;
+//             // position: relative;
+//             // padding-left: 70px;
+//         }
+//     }
+// }
+
+
+/////////////
+/* LAYER 2 */
+/////////////
+
+
+/////////////
+/* LAYER 3 */
+/////////////
 
 
 
-
-}

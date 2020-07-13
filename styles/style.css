@@ -745,22 +745,25 @@ header a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
   height: 800px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
 .moreInfo .layer1 .layer1Box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1094,22 +1097,10 @@ article .longText .date {
     height: 400px;
   }
   .fourSquares {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background: #0F614E;
     height: 600px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .fourSquares .imageBox {
     display: none;
@@ -1119,17 +1110,6 @@ article .longText .date {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: static;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .fourSquares .textBox a {
     -ms-flex-item-align: center;
@@ -1140,4 +1120,14 @@ article .longText .date {
   .fourSquares .textBox p {
     width: 70%;
   }
+  .layer3 .textBox:before {
+    display: none;
+  }
+  .threeImageRow {
+    height: 400px;
+  }
 }
+
+/* LAYER 1 */
+/* LAYER 2 */
+/* LAYER 3 */
