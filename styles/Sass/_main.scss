@@ -34,6 +34,7 @@
     .imageBox {
         position: absolute;
         width: 40%;
+        z-index: 2;
     }
     .textBox {
         width: 40%;
@@ -64,10 +65,30 @@
     align-self: flex-end;
     display: flex;
     align-items: flex-start;
+    &:before {
+        content: "";
+        height: 40%;
+        width: 40%;
+        background:$robinblue;
+        position: absolute;
+        top: 0;
+        left:50px;
+        z-index: 0;
+    }
 }
 
 .bottomBox {
     display: flex;
+     &:before {
+        content: "";
+        height: 40%;
+        width: 40%;
+        background:$robinblue;
+        position: absolute;
+        bottom: -150px;
+        right:50px;
+        z-index: 0;
+    }
     h3, p {
         text-align: right;
     }
@@ -84,17 +105,4 @@
 .bottomImage {
     bottom: -100px;
     right: 0;
-    // &:before {
-    //     content: "";
-    //     width: 400000px;
-    //     height: 1000px;
-    //     position: relative;
-    //     color: $robinblue;
-    //     z-index: 90;
-    //     top: 0px;
-    //     left: 0px;
-    //     display: inline-block;
-    // }
-
-    // ^ COME BACK TO THIS WHEN THE REST OF THE PAGE IS DONE 
 }

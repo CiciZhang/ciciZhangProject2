@@ -630,6 +630,7 @@ header a:hover {
 .fourSquares .imageBox {
   position: absolute;
   width: 40%;
+  z-index: 2;
 }
 
 .fourSquares .textBox {
@@ -682,10 +683,32 @@ header a:hover {
           align-items: flex-start;
 }
 
+.topBox:before {
+  content: "";
+  height: 40%;
+  width: 40%;
+  background: #86E0F9;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  z-index: 0;
+}
+
 .bottomBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.bottomBox:before {
+  content: "";
+  height: 40%;
+  width: 40%;
+  background: #86E0F9;
+  position: absolute;
+  bottom: -150px;
+  right: 50px;
+  z-index: 0;
 }
 
 .bottomBox h3, .bottomBox p {
