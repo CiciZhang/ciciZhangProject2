@@ -14,15 +14,16 @@
             margin: 0;
             width: 100%;
             align-self: center;
-            // .formFlex {
-            //     flex-direction: column;
-            //     width: 80%;
-            //     input {
-            //         width: 100%;
-            //         padding: 0;
-            //         margin: 30px 0;
-            //     }
-            
+            height: 700px;
+            .formFlex {
+                flex-direction: column;
+                width: 80%;
+                input {
+                    width: 100%;
+                    padding: 0;
+                    margin: 30px 0;
+                }
+            }
             h1 {
                 text-align: center;
             }
@@ -36,6 +37,7 @@
                 textarea {
                     width: 80%;
                     margin-top: 50px;
+                    padding: 0;
                 }
             }
         }
