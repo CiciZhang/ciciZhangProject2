@@ -59,7 +59,18 @@
         form {
         padding: 0;
         margin: 0 auto;
+            .formFlex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // margin-bottom: 50px;
+            input {
+                padding: 0;
+                width: 100%;
+                }
+            }
         }
     }
+   
 }
 
