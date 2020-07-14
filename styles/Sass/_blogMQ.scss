@@ -1,0 +1,15 @@
+@media (max-width: 1380px) {
+
+// this is the horizonal blue bar 
+    .blogHeader .wrapper::after,
+    .blogHeader .wrapper::before{
+        display: none;
+    }
+}
+
+@media (max-width:1100px) {
+    .blogHeader .blueBox::before{
+        display: none;
+    }
+}
+ 

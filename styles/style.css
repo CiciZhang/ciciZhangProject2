@@ -1136,6 +1136,9 @@ article .longText .date {
   .threeImageRow {
     max-height: 500px;
   }
+  .blogHeader .blueBox::before {
+    display: none;
+  }
 }
 
 /* THIS IS PHONE SIZE */
@@ -1152,5 +1155,18 @@ article .longText .date {
   }
   p {
     font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 1380px) {
+  .blogHeader .wrapper::after,
+  .blogHeader .wrapper::before {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .blogHeader .blueBox::before {
+    display: none;
   }
 }
