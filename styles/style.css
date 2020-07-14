@@ -1211,7 +1211,8 @@ article .longText .date {
             align-items: center;
     padding: 20px;
     position: static;
-    width: 100%;
+    width: 80%;
+    margin-top: 50px;
   }
   aside .asideText p {
     width: 70%;
@@ -1236,9 +1237,10 @@ article .longText .date {
   }
   .commentSection {
     margin-top: 0;
+    height: 700px;
   }
   .commentSection form {
-    padding: 0;
+    padding-top: 0;
     margin: 0 auto;
   }
   .commentSection form .formFlex {
@@ -1254,7 +1256,11 @@ article .longText .date {
             align-items: center;
   }
   .commentSection form .formFlex input {
-    padding: 0;
+    padding: 10px 0;
     width: 100%;
+    margin: 0;
+  }
+  .commentSection form textarea {
+    margin-top: 30px;
   }
 }
