@@ -1286,13 +1286,17 @@ article .longText .date {
     text-align: center;
   }
   .contactHeader .wrapper form {
-    position: static;
+    position: relative;
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
     margin: 0;
+    height: 600px;
+  }
+  .contactHeader .wrapper form textarea {
+    width: 80%;
   }
   .contactSubmitButton {
     padding: 10px;

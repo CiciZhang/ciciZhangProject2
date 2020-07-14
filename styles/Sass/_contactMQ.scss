@@ -18,11 +18,15 @@
                 text-align: center;
             }
             form {
-                position: static;
+                position: relative;
                 width: 100%;
                 align-items: center;
                 padding: 0;
                 margin: 0;
+                height:600px;
+                textarea {
+                    width: 80%;
+                }
             }
         }
     }
