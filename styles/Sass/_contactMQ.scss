@@ -1,0 +1,33 @@
+
+@media (max-width: 1300px) {
+        .contactHeader .wrapper::before {
+        display: none;
+    }
+ }
+
+@media (max-width: 800px) {
+    .contactHeader .wrapper::before {
+        display: none;
+    }
+    .contactHeader {
+        .wrapper {
+            margin: 0;
+            width: 100%;
+            align-self: center;
+            h1 {
+                text-align: center;
+            }
+            form {
+                position: static;
+                width: 100%;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+    .contactSubmitButton {
+        padding: 10px;
+        border: none;
+    }
+}
