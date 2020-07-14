@@ -1282,6 +1282,16 @@ article .longText .date {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .contactHeader .wrapper .formFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+  }
+  .contactHeader .wrapper .formFlex input {
+    width: 100%;
+  }
   .contactHeader .wrapper h1 {
     text-align: center;
   }
@@ -1301,5 +1311,6 @@ article .longText .date {
   .contactSubmitButton {
     padding: 10px;
     border: none;
+    margin-bottom: 50px;
   }
 }

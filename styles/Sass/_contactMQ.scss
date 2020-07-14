@@ -14,6 +14,13 @@
             margin: 0;
             width: 100%;
             align-self: center;
+            .formFlex {
+                flex-direction: column;
+                width: 80%;
+                input {
+                    width: 100%;
+                }
+            }
             h1 {
                 text-align: center;
             }
@@ -33,5 +40,6 @@
     .contactSubmitButton {
         padding: 10px;
         border: none;
+        margin-bottom: 50px;
     }
 }
